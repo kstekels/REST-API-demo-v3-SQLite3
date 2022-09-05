@@ -3,7 +3,7 @@
 ## How to start
 
 ```
-python3.9 -m venv venv
+virtualenv venv --python=python3.9
 ```
 
 ```
@@ -16,7 +16,15 @@ pip isntall -r requirements.txt
 
 ```
 cd code/
+```
 
+### Create a DB
+```
+python create_tables.py
+```
+
+### Run Flask server
+```
 python app.py
 ```
 
